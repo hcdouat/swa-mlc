@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <div style={{ padding: 16, fontFamily: "system-ui, sans-serif" }}>
-      <h1>MLC Frontend</h1>
+      <h1>MLC Dashboard</h1>
 
       <p>
         API: <code>{import.meta.env.VITE_API_BASE_URL}</code>
