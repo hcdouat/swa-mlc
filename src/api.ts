@@ -1,4 +1,4 @@
-const baseUrl = import.meta.env.VITE_API_BASE_URL;
+const baseUrl = "https://app-mlc-api-epdqf4eye5etd4dh.canadacentral-01.azurewebsites.net";
 
 export async function getItems() {
   const res = await fetch(`${baseUrl}/api/items`);
