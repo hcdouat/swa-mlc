@@ -247,7 +247,7 @@ export function WonRevenueStackedBar({ deals }: { deals: any[] }) {
                           fill: '#000',
                           fontSize: 24,
                           fontWeight: 'bold',
-                          formatter: (value: string | number | undefined) => 
+                          formatter: (value: any) => 
                             typeof value === 'number' ? `${funnel.percentage.toFixed(0)}%` : '0%'
                         }}
                       />
