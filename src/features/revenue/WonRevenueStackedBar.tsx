@@ -219,7 +219,7 @@ export function WonRevenueStackedBar({ deals }: { deals: any[] }) {
 
           const forecastDate = new Date(d.previsao_fechamento);
           if (Number.isNaN(forecastDate.getTime())) return;
-          if (forecastDate < startOfCurrentMonth) return;
+          if (forecastDate < now) return;
 
           const monthKey = `${forecastDate.getFullYear()}-${String(forecastDate.getMonth() + 1).padStart(2, "0")}`;
           if (!grouped[monthKey]) {
